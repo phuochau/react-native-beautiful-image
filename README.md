@@ -3,7 +3,7 @@ react-native-beautiful-image
 
 The Image component that supports fadeIn animation and shows placeholderSource if the main source can't be loaded. More will be implemented.
 
-![Sample](http://g.recordit.co/6tyDejEyOM.gif)
+![Sample](screenshot.gif)
 
 ## Installation
 

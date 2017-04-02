@@ -30,6 +30,11 @@ option | Info
 ------ | ----
 placeholderSource | Show `placeholderSource`if the `source`can't be loaded.
 
+## Todo
+- Support more animations
+- Lazy Loading based on position in View.
+- TBD
+
 ## License
 
 MIT

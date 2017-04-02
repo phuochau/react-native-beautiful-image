@@ -1,6 +1,6 @@
 {
   "name": "react-native-beautiful-image",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Beautiful Image component for React Native",
   "main": "index.js",
   "scripts": {

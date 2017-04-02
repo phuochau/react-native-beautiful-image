@@ -6,8 +6,6 @@ The Image component that supports fadeIn animation and shows placeholderSource i
 
 ## Installation
 
-Get started by installing the node module:
-
 ```bash
 npm i --save react-native-beautiful-image
 ```
@@ -30,7 +28,7 @@ Supports all [Image](https://facebook.github.io/react-native/docs/images.html) p
 
 option | Info
 ------ | ----
-placeholderSource | Show `placeholderSource`if the `source`can't be loaded.
+placeholderSource | Show `placeholderSource` if the `source` can't be loaded.
 
 ## Todo
 - Support more animations

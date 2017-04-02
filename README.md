@@ -6,7 +6,7 @@ The Image component that supports fadeIn animation and shows placeholderSource i
 
 ## Installation
 
-Get started with Lottie by installing the node module:
+Get started by installing the node module:
 
 ```bash
 npm i --save react-native-beautiful-image
@@ -16,8 +16,6 @@ Please file an issue if you have any trouble!
 
 
 ## Usage
-
-Lottie's animation progress can be controlled with an `Animated` value:
 
 ```jsx
 import Image from 'react-native-beautiful-image';

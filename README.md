@@ -20,6 +20,10 @@ Please file an issue if you have any trouble!
 Lottie's animation progress can be controlled with an `Animated` value:
 
 ```jsx
+import Image from 'react-native-beautiful-image';
+
+....
+
 <Image source={{ uri: 'https://avatars2.githubusercontent.com/u/1784243?v=3&s=460' }}
     placeholderSource={require('./placeholder.png'} />
 ```

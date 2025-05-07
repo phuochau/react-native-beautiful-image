@@ -1,40 +1,59 @@
-react-native-beautiful-image
-===
+# react-native-beautiful-image
 
-The Image component that supports fadeIn animation and shows placeholderSource if the main source can't be loaded. More will be implemented.
-
-![Sample](screenshot.gif)
+A beautiful image component for React Native with fade-in animation and placeholder support.
 
 ## Installation
 
 ```bash
-npm i --save react-native-beautiful-image
+npm install react-native-beautiful-image
+# or
+yarn add react-native-beautiful-image
 ```
-
-Please file an issue if you have any trouble!
-
 
 ## Usage
 
-```jsx
+```typescript
 import Image from 'react-native-beautiful-image';
 
-....
+// Basic usage
+<Image
+  source={{ uri: 'https://example.com/image.jpg' }}
+  style={{ width: 200, height: 200 }}
+/>
 
-<Image source={{ uri: 'https://avatars2.githubusercontent.com/u/1784243?v=3&s=460' }}
-    placeholderSource={require('./placeholder.png'} />
+// With placeholder
+<Image
+  source={{ uri: 'https://example.com/image.jpg' }}
+  placeholderSource={require('./assets/placeholder.jpg')}
+  style={{ width: 200, height: 200 }}
+/>
+
+// With callbacks
+<Image
+  source={{ uri: 'https://example.com/image.jpg' }}
+  onLoad={() => console.log('Image loaded')}
+  onError={() => console.log('Image failed to load')}
+  style={{ width: 200, height: 200 }}
+/>
 ```
-## Options
-Supports all [Image](https://facebook.github.io/react-native/docs/images.html) properties.
 
-option | Info
------- | ----
-placeholderSource | Show `placeholderSource` if the `source` can't be loaded.
+## Props
 
-## Todo
-- Support more animations
-- Lazy Loading based on position in View.
-- TBD
+| Prop | Type | Required | Description |
+|------|------|----------|-------------|
+| source | ImageSourcePropType | Yes | The source of the image |
+| style | StyleProp<ImageStyle> | No | Style for the image |
+| onLoad | () => void | No | Callback when image loads successfully |
+| onError | () => void | No | Callback when image fails to load |
+| placeholderSource | ImageSourcePropType | No | Image to show while loading or on error |
+
+## TypeScript Support
+
+This library is written in TypeScript and includes type definitions. The main component is exported as:
+
+```typescript
+import Image, { ImageExtProps } from 'react-native-beautiful-image';
+```
 
 ## License
 

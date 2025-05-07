@@ -21,15 +21,5 @@
   "bugs": {
     "url": "https://github.com/phuochau/react-native-beautiful-image/issues"
   },
-  "homepage": "https://github.com/phuochau/react-native-beautiful-image#readme",
-  "peerDependencies": {
-    "react": ">=18.0.0",
-    "react-native": ">=0.79.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.0",
-    "react": "^18.2.0",
-    "react-native": "^0.79.0",
-    "typescript": "^5.0.0"
-  }
+  "homepage": "https://github.com/phuochau/react-native-beautiful-image#readme"
 }
